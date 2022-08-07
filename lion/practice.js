@@ -1,0 +1,1 @@
+document.querySelector('.tab-button')[0].addEventListener("click",function)

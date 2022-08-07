@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="./main.css"
+        <title>Time</title>
+    </head>
+    <body>
+        <div class="timeout">7초 후에 사라짐.</div>
+        <script>
+            var timecnt= 7; //변수 생성
+            setInterval(function(){
+                timecnt--;
+                document.querySelector(
+                    ".timeout"
+                ).innerHTML =`${timecnt}초 후에 사라짐`;
+            },1000); //1초 단위 반복
+            setTimeout(function(){
+                document.querySelector(".timeout").style.display="none"; //사라지게함.
+            },7000); 
+   
+        </script>
+</body>
+</html>

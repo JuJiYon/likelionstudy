@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+        <meta name="viewport" content="width=device-width",initial-scale=1.0"/>
+        <title>Document</title>
+    </head>
+    <body>
+        <style>
+            .blue{
+                width:0px;
+                height: 5px;
+                background-color: rgb(92,100,254);
+
+            }
+        </style>
+       <div class="blue"></div>
+       <div class="lyrics">
+        <p>이듬해 질 녘 꽃 피는 봄 ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ\
+            ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
+        ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
+    ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
+    ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
+       </div>
+       <script>
+            let bar = document.querySelector(".blue");
+            let lyrics = document.querySelector(".lyrics");
+
+            lyrics.addEventListener("scroll",function(){
+                let scrollTop=lyrics.scrollTop;
+                let scrollHeight = lyrics.scrollHeight-lyric.clientHeight;
+                let per = scrollTop / scrollHeight;
+                bar.style.width = '${per * 250}px';
+            });
+            
+       </script>
+    </body>
+</html>

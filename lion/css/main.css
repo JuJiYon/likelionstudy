@@ -1,0 +1,20 @@
+#main {
+    background-color:aliceblue;
+    text-align: center;
+    width: 80%;
+    border-radius: 30px;
+}
+p{
+    font-size: 15px;
+}
+.startBtn{
+    padding : 15px 55px;
+    border: 3px solid skyblue;
+    color : skyblue;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.startBtn:hover, .startBtn:active{
+    background-color: rgb(149, 216, 214);
+    color: aliceblue;
+}
