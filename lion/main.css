@@ -11,7 +11,7 @@ ul.list::after{
 }
 .tab-button{
     display: block;
-    padding: 10px 20px 10px 20px;
+    padding: 100px 200px 100px 200px;
     float:left;
     margin-right: -1px;
     margin-bottom: -1px;

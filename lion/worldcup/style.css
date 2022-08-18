@@ -1,0 +1,35 @@
+
+img {
+    width: 500px;
+    height: 300px; 
+    padding: 10px 20px 10px 20px;
+    margin: 100px 250px 10px 380px;
+  }
+  h2 {
+    font-family: 'Black Han Sans', sans-serif;
+    text-align: center;
+  }
+  
+  h3{
+    font-family: 'Gowun Batang', serif;
+    padding: 10px 20px 10px 20px;
+    margin: 100px 0px 0px 0px;;
+    text-align: center;
+  }
+  button {
+    font-size:18px;
+    width:200px;
+    padding : 10px 20px;
+    margin: 10px 200px 10px 520px;
+    border-radius: 10px; // 버튼 상자에 radius를 줘서 둥글게 만듬.
+  }
+  button:hover{
+    color:rgb(241, 62, 62);
+    background-color: rgb(61, 61, 61);
+  }
+  #id1{
+    padding: 10px 20px 10px 20px;
+    text-align: center; 
+    font-size: 25px;
+    font-weight: bold;
+  }

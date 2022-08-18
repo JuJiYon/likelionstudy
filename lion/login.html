@@ -1,53 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  
+<head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
-    <title>Login</title>
-    <style>
-        
-        .login {
-            width: 500px;
-            margin: 200px auto auto auto;
-            background-color: #97d797;
-        }
-        .title{
-            margin: 0px 0px 0px 150px;
-        }
-        .id{
-            margin: 20px 0px 0px 160px;
-            font-size: 20px;
-        }
-        .pw{
-            margin: 20px 0px 0px 160px;
-            font-size: 20px;
-        }
-        .button{    
-            margin: 0px 0px 0px 0px;       
-            border:1px solid #03c75b;
-            background-color: #03c75b;
-            width:350px;
-            margin-left:auto;
-            margin-right:auto;
-            border-radius: 8px;
-            padding : 10px 20px;
-            text-align: center;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My page</title>
     
 </head>
 <body>
-   
-    <div class = "login">
-      
-        <h1 class = "title">로그인 페이지</h1>
-        <hr>
-        <p class = "ID">ID: <input type="text" /></p>
-        <p class = "PW">PW: <input type="text" /></p>
-        <p class = "button"><button>로그인!</button></p>
-        <hr>
-    </div>
-        
+    <div class="container">
+        <div class="image-upload" id="image-upload">
 
+            <form method="post" enctype="multipart/form-data">
+                <div class="button">
+                    <label for="chooseFile">
+                        👉 CLICK HERE! 👈
+                    </label>
+                </div>
+                <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+            </form>
+
+            <div class="fileContainer">
+                <div class="fileInput">
+                    <p>FILE NAME: </p>
+                    <p id="fileName"></p>
+                </div>
+                <div class="buttonContainer">
+                    <div class="submitButton" id="submitButton">SUBMIT</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-show" id="image-show"></div>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
